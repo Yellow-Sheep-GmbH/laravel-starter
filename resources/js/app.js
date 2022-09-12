@@ -1,4 +1,4 @@
-import "./bootstrap";
+import bootstrap from "./bootstrap";
 import "../css/app.css";
 
 import { createApp, h } from "vue";
@@ -12,8 +12,9 @@ createInertiaApp({
             import.meta.glob("./Pages/**/*.vue")
         ),
     setup({ el, App, props, plugin }) {
-        createApp({ render: () => h(App, props) })
+        const vueApp = createApp({ render: () => h(App, props) })
             .use(plugin)
             .mount(el);
+        bootstrap(vueApp);
     },
 });
