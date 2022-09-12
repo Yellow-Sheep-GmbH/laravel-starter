@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f7cc27a6b33ee4c7912247b0491bd60",
+    "content-hash": "59ea4c97f4a3de9525af6ddaec13b638",
     "packages": [
         {
             "name": "area17/twill",
@@ -94,6 +94,63 @@
                 "source": "https://github.com/area17/twill/tree/2.8.8"
             },
             "time": "2022-06-27T07:07:19+00:00"
+        },
+        {
+            "name": "area17/twill-image",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/area17/twill-image.git",
+                "reference": "0db43be3692bac7b3f5b0fb99222c4a40e5f8ba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/area17/twill-image/zipball/0db43be3692bac7b3f5b0fb99222c4a40e5f8ba7",
+                "reference": "0db43be3692bac7b3f5b0fb99222c4a40e5f8ba7",
+                "shasum": ""
+            },
+            "require": {
+                "area17/twill": "2.*",
+                "laravel/framework": "~5.6|~5.7|~5.8|^6.0|^7.0|^8.0|^9.0",
+                "php": ">=7.2.5",
+                "spatie/laravel-view-models": "^1.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "A17\\Twill\\Image\\TwillImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "TwillImage": "A17\\Twill\\Image\\Facades\\TwillImage",
+                        "TwillStaticImage": "A17\\Twill\\Image\\Facades\\TwillStaticImage"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "A17\\Twill\\Image\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Vézina",
+                    "email": "patrick@area17.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/area17/twill-image/issues",
+                "source": "https://github.com/area17/twill-image/tree/1.x"
+            },
+            "time": "2022-06-11T13:30:48+00:00"
         },
         {
             "name": "astrotomic/laravel-translatable",
@@ -5441,6 +5498,74 @@
                 }
             ],
             "time": "2022-06-28T14:29:26+00:00"
+        },
+        {
+            "name": "spatie/laravel-view-models",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-view-models.git",
+                "reference": "a84700af22321402cb8c353a4e3972d07ce37ce0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-view-models/zipball/a84700af22321402cb8c353a4e3972d07ce37ce0",
+                "reference": "a84700af22321402cb8c353a4e3972d07ce37ce0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\ViewModels\\Providers\\ViewModelsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ViewModels\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Roose",
+                    "email": "brent@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "View models in Laravel",
+            "homepage": "https://github.com/spatie/laravel-view-models",
+            "keywords": [
+                "laravel-view-models",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-view-models/issues",
+                "source": "https://github.com/spatie/laravel-view-models/tree/1.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-23T07:43:40+00:00"
         },
         {
             "name": "spatie/once",

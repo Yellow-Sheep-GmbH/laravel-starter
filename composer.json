@@ -2,11 +2,15 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
         "area17/twill": "^2.0",
+        "area17/twill-image": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.6.3",
         "laravel/framework": "^9.19",
@@ -32,6 +36,9 @@
         }
     },
     "autoload-dev": {
+        "files": [
+            "app/Http/helpers.php"
+        ],
         "psr-4": {
             "Tests\\": "tests/"
         }
