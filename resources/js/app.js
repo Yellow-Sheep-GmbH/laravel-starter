@@ -12,9 +12,8 @@ createInertiaApp({
             import.meta.glob("./Pages/**/*.vue")
         ),
     setup({ el, App, props, plugin }) {
-        const vueApp = createApp({ render: () => h(App, props) })
-            .use(plugin)
-            .mount(el);
+        const vueApp = createApp({ render: () => h(App, props) }).use(plugin);
         bootstrap(vueApp);
+        vueApp.mount(el);
     },
 });

@@ -17,9 +17,11 @@ createServer((page) =>
                 import.meta.glob("./Pages/**/*.vue")
             ),
         setup({ app, props, plugin }) {
-            return createSSRApp({
+            const vueApp = createSSRApp({
                 render: () => h(app, props),
             }).use(plugin);
+            bootstrap(vueApp);
+            return vueApp;
         },
     })
 );
