@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
-class CreateTwillDefaultSettingsTable extends Migration
+class CreateTwillSettingsTable extends Migration
 {
     /**
      * Run the migrations.
